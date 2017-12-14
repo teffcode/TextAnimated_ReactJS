@@ -1,0 +1,29 @@
+.word {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #55e291;
+  height: 1.4em;
+  padding: 0 14px 0 7px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.word:before {
+  content: '';
+  background-color: #4a4a4a;
+  width: 1px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 7px;
+  animation: blinkAnim 500ms linear infinite;
+}
+
+@keyframes blinkAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
